@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #00a656;
+    height: 100px;
+    display: flex;
+}
+header div h1,h2,h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header div h1{
+    font-size: 30px;
+}
+header div h2,h3{
+    font-size: 15px;
+}
+header div:nth-child(1){
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header div:nth-child(3){
+    flex: 1;
+}
+nav{
+    background-color: #fff000;
+    height: 40px;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+nav ul li{
+    margin-left: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Trebuchet ms";
+    font-weight: 900;
+}
+nav ul li a:hover{
+    color: white;
+    font-weight: 900;
+}
+
+/* css slide show */
+div#kerangka {
+    border: 1px solid rgb(148, 114, 114);
+    box-sizing: border-box;
+}
+#frame{
+    width: 640px;
+    height: 426px;
+    overflow: hidden;
+    position: relative;
+    /*induknya dijadikan position:relative supaya anak nya yang position:absolute masih tetap berada di dalamnya*/
+}
+#slide{
+    width: auto;
+    display: flex;
+    position: absolute;
+    
+}
+.item{
+    width: 640px;
+
+}
+
+.posisi1 {left: 0px; transition: 1s;}
+.posisi2 {left: -640px; transition: 1s;}
+.posisi3 {left: -1280px; transition: 1s;}
+.posisi4 {left: -1920px; transition: 1s;}
+
+.teks {
+    position: absolute;
+    width: 640px;
+    background: rgb(148, 114, 114);
+    top: 360px;
+    height: 66px;
+    color: white;
+    padding: 5px;
+
+}
